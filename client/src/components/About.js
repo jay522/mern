@@ -95,11 +95,11 @@ const About = () => {
               <div className="col-md-4">
                 <div className="profile-work">
                   <p>WORK LINK</p>
-                  <a href="#">Youtube</a>
+                  <a href="https://project0-crud.herokuapp.com/">Blog App</a>
                   <br /><br />
-                  <a href="#">Youtube</a>
+                  <a href="https://weather421.herokuapp.com/">Weather</a>
                   <br /><br />
-                  <a href="#">Youtube</a>
+                  <a href="https://blog522.herokuapp.com/">Blog App Demo</a>
                   <br /><br />
                   <a href="#">Youtube</a>
                   <br /><br />
