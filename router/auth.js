@@ -8,9 +8,7 @@ const authenticate=require("../middleware/authenticate")
 const cookieParser=require("cookie-parser")
 
 router.use(cookieParser());
-router.get('/',(req,res)=>{
-    res.send("Hello from server auth");
-});
+
 router.post('/contact',authenticate,async(req,res)=>{
     try{
     const {name,email,phone,message}=req.body;
