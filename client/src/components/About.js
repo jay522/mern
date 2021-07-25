@@ -36,7 +36,7 @@ const About = () => {
   }, []);
     return (
       <>
-        <div className="container emp-profile">
+        <div className="container emp-profile mt-4">
           <form method="GET">
             <div className="row">
               <div className="col-md-4">

@@ -104,7 +104,8 @@ const Contact = () => {
                                 Get In Touch
                             </div>
                             <form id="contact_form" className="mx-3" method="POST">
-                                <div className="contact_form_name">
+                                {/* add className="contact_form_name" if neccessary */}
+                                <div>
                                     <div className="row">
                                         <div className="col-sm-4">
                                             <div className="d-flex justify-content-center align-items-center flex-row px-3">

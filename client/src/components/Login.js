@@ -6,7 +6,7 @@ import LockIcon from '@material-ui/icons/Lock';
 import { userContext } from '../App';
 
 const Login = () => {
-    const {dispatch} = useContext(userContext);
+    const {state,dispatch} = useContext(userContext);
     const history=useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

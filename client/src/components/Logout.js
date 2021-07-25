@@ -4,7 +4,7 @@ import { userContext } from '../App';
 
 const Logout = () => {
 
-    const {dispatch} = useContext(userContext);
+    const {state,dispatch} = useContext(userContext);
     const history=useHistory();
     // promisses
     useEffect(()=>{
