@@ -11,6 +11,7 @@ import Signup from './components/Signup';
 import Contact from './components/Contact';
 import Errorpage from './components/Errorpage';
 import Logout from './components/Logout';
+import Footer from './components/Footer';
 
 import { initialState,reducer } from './components/reducer/UseReducer';
 
@@ -20,6 +21,7 @@ import { initialState,reducer } from './components/reducer/UseReducer';
 function App() {
 
   const [state, dispatch] = useReducer(reducer, initialState);
+  
 
   return (
     <>
@@ -52,6 +54,7 @@ function App() {
         <Errorpage />
       </Route>
       </Switch>
+      <Footer />
      </userContext.Provider>
     </>
   );

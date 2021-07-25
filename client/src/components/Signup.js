@@ -48,10 +48,16 @@ const Signup = () => {
     return (
         <>
           <section className="signup">
-            <div className="container mt-5">
+            <div className="container mt-3">
                 <div className="row signup-content">
-                    <div className="signup-form col-6">
-                        <h2 className="form-title">Sign Up</h2>
+                <div className="signup-image col-md-6 d-flex justify-content-center align-items-center flex-column mt-2">
+                <h2 className="form-title mb-2">Sign Up</h2>
+                        <figure>
+                            <img src={sign} alt="signup" />
+                        </figure>
+                        <NavLink to="/login" className="signup-image-link">I have already registered.</NavLink>
+                    </div>
+                    <div className="signup-form col-md-6 d-flex justify-content-center align-items-center flex-column mt-2">
                         <form className="register-form" method="POST" id="register-form">
                             <div className="form-group">
                                 <lable htmlFor="name"> <Account /> </lable>
@@ -100,12 +106,6 @@ const Signup = () => {
                                 {/* <a>signup</a> */}
                             </div>
                         </form>
-                    </div>
-                    <div className="signup-image col-6">
-                        <figure>
-                            <img src={sign} alt="signup" />
-                        </figure>
-                        <NavLink to="/login" className="signup-image-link">I have already registered.</NavLink>
                     </div>
                 </div>
             </div>    

@@ -40,7 +40,7 @@ const About = () => {
           <form method="GET">
             <div className="row">
               <div className="col-md-4">
-                <img src={logo} alt="logo" height="170px" width="160px" />
+                <img src={logo} alt="logo" height="130px" width="120px" />
               </div>
               <div className="col-md-6">
                 <div className="profile-head">
@@ -101,7 +101,7 @@ const About = () => {
                   <br /><br />
                   <a href="https://blog522.herokuapp.com/">Blog App Demo</a>
                   <br /><br />
-                  <a href="#">Youtube</a>
+                  <a href="https://n6gnplzsh9ohz7rzmh1uaq-on.drv.tw/jay/quotes/">Quotes</a>
                   <br /><br />
                 </div>
               </div>

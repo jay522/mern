@@ -31,7 +31,7 @@ const Contact = () => {
   
     useEffect(() => {
       callContactPage()
-    }, []);
+    },[]);
 
     const handleInputs=(e)=>{
         const name=e.target.name;
@@ -64,7 +64,7 @@ const Contact = () => {
         <>
            <div className="contact-info">
                <div className="container-fluid">
-                <div class="row">
+                <div class="row mt-4 mt-2">
             <div className="col-sm-4">
                 <div className="card d-flex justify-content-start align-items-center flex-row px-3">
                 <PhoneAndroidIcon />
@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
             </div>
             </div>
-            <div className="col-sm-4">
+            <div className="col-sm-4 mt-2">
             <div className="card d-flex justify-content-start align-items-center flex-row px-3">
             <MailOutlineIcon />
                 <div className="card-body">
@@ -83,7 +83,7 @@ const Contact = () => {
                 </div>
             </div>
             </div>
-            <div className="col-sm-4">
+            <div className="col-sm-4 mt-2">
                     <div className="card d-flex justify-content-start align-items-center flex-row px-3">
                     <HomeIcon />
                     <div className="card-body">
@@ -104,33 +104,50 @@ const Contact = () => {
                                 Get In Touch
                             </div>
                             <form id="contact_form" className="mx-3" method="POST">
-                                <div className="contact_form_name d-flex justify-content-between align-items-center">
-                                    <input type="text" id="contact_form_name" className="contact_form_name input_field"
-                                    onChange={handleInputs}
-                                    name="name"
-                                    value={user.name}
-                                    placeholder="Your Name" required="true" />
-                                    <input type="text" id="contact_form_name" className="contact_form_name input_field"
-                                    onChange={handleInputs}
-                                    name="email"
-                                    value={user.email}
-                                    placeholder="Your Email" required="true" />
-                                    <input type="text" id="contact_form_name" className="contact_form_name input_field"
-                                    onChange={handleInputs}
-                                    name="phone"
-                                    value={user.phone}
-                                    placeholder="Your Number" required="true" />
-                                </div>
-                                <div className="contact_form_text mt-3">
-                                    <textarea className="text_field contect_form_message" id="" cols="50"
-                                    onChange={handleInputs}
-                                    name="message"
-                                    value={user.message}
-                                    placeholder="Message" rows="10"></textarea>
-                                </div>
-
-                                <div className="contact_form_button">
-                                    <button type="submit" onClick={contactForm}>Send Message</button>
+                                <div className="contact_form_name">
+                                    <div className="row">
+                                        <div className="col-sm-4">
+                                            <div className="d-flex justify-content-center align-items-center flex-row px-3">
+                                            <input type="text" id="contact_form_name" className="input_field"
+                                            onChange={handleInputs}
+                                            name="name"
+                                            value={user.name}
+                                            placeholder="Your Name" required="true" />
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4 mt-2">
+                                            <div className="d-flex justify-content-center align-items-center flex-row px-3">
+                                            <input type="text" id="contact_form_name" className="input_field"
+                                            onChange={handleInputs}
+                                            name="email"
+                                            value={user.email}
+                                            placeholder="Your Email" required="true" />
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4 mt-2">
+                                            <div className="d-flex justify-content-center align-items-center flex-row px-3">
+                                            <input type="text" id="contact_form_name" className="input_field"
+                                            onChange={handleInputs}
+                                            name="phone"
+                                            value={user.phone}
+                                            placeholder="Your Number" required="true" />
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4 mt-2">
+                                            <div className="d-flex justify-content-center align-items-center flex-row px-3">
+                                            <textarea className="text_field contect_form_message" id="" cols="40" rows="10"
+                                            onChange={handleInputs}
+                                            name="message"
+                                            value={user.message}
+                                            placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4 mt-2">
+                                        <div className="contact_form_button d-flex justify-content-center align-items-center flex-row mt-2 mb-5">
+                                            <button type="submit" onClick={contactForm}>Send Message</button>
+                                        </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                         </div>
