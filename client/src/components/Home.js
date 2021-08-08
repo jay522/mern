@@ -17,8 +17,7 @@ const Home = () => {
               }
             });
             const data=await res.json();
-            console.log(data);
-            console.log("local"+localStorage.getItem('isLoggedin'));
+            // console.log(data);
             setUserName(data.name);
             setShow(true)
     
