@@ -9,7 +9,7 @@ export const reducer=(state,action)=>{
 }
 
 let val;
-if(localStorage.getItem('loggedIn')=='true'){
+if(localStorage.getItem('loggedIn')==='true'){
   val=1
 }else{
   val=0

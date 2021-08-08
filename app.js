@@ -14,9 +14,9 @@ app.use(cookieParser());
 // we link router files to make our route easy
 app.use(require('./router/auth'));
 
-app.get('/contact',(req,res)=>{
-    res.send("Hello contact from server");
-});
+// app.get('/contact',(req,res)=>{
+//     res.send("Hello contact from server");
+// });
 
 if(process.env.NODE_ENV=="production"){
     app.use(express.static("client/build"));
